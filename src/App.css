@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#chatPage{
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+#allUsers{
+  width: 30%;
+  height: 100vh;
+  border-right: 1px solid black;
+  background-color: rgb(179, 187, 181);
+}
+
+#chatBox{
+  width: 70%;
+  height: 100vh;
+  /* border: 1px solid black; */
+  background-color: rgb(163, 163, 150);
+}
+
+
+#minetext{
+  width: 80%;
+  padding: 0.4rem;
+  margin-right: 0.4rem;
+  outline: none;
+  border: none;
+}
+#send{
+  padding: 0.4rem;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  /* outline: none;  */
+  background-color: tomato;
+  border: 0px;
+}
+
+#newUser{
+  font-size: 3rem;
+  font-weight: bolder;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  
+}
+
+.contact_list li{
+  text-align: left;
+  margin-bottom: 1rem;
+  margin: 1rem;
+  border-bottom: 1px solid gray;
+  list-style: none;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  cursor: pointer;
+}
+
+#allUsers div{
+  /* text-align: lef; */
+  margin-left: 1rem;
+}
+#contactbtn{
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  outline: none; 
+  background-color: tomato; 
+  cursor: pointer;
+  border: 0px ;
+}
+
+.list_heading{
+  font-size: 1.5rem;
+  font:bold;
+}
+
+#typeSend{
+  /* border-top: 1px solid black; */
+  text-align: center;
+  position: absolute;
+  bottom:3%;
+  width: 70%;
+  /* margin-top: 2rem; */
+}
+
+.userlist{
+  cursor: pointer;
+}
+li{
+  list-style: none;
+}
+#no_chat{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font : 600 5vmax ; */
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 3rem;
+}
+
+#user_heading{
+  background-color: rgb(4, 82, 56);
   color: white;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.outerply{
+  display: flex;
+  justify-content: end;
+}
+.reply{
+  padding: 1rem;
+  text-align: right;
+  font-family: 'Roboto Flex', sans-serif;
+  display: inline-block;
+  background-color: pink;
+  border-radius: 1rem;
+  margin-right: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.histext{
+  padding: 1rem;
+  color: white;
+  font-family: 'Roboto Flex', sans-serif;
+  display: inline-block;
+  background-color: black;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+#minesearch{
+  width: 60%;
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  border: 0px;
+  outline: none;
+}
+
+#search{
+  width: 20%;
+  margin-top: 0.2rem;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  border: 0px;
+  background-color: rgb(255, 198, 198);
+  outline: none;
+}
+
+#sresult{
+  background-color: white;
+  margin: 2rem;
 }
